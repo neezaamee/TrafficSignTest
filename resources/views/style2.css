@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+    font: 15px calibri;
+}
+
+.menu ul {
+    text-align: center;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    border-right: solid 1px #FFFFFF;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #FFFFFF;
+}
+
+.menu ul li a {
+    color: #FFFFFF;
+}
+
+.menu ul li a:hover {
+    color: #FFFF00;
+}
+
+.menu ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 150px;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+}
+
+.menu ul li ul li {
+    background: #014f7d;
+    border-top: solid thin #FFFFFF;
+    display: block;
+    color: #FFFFFF;
+    z-index: 10000;
+}
+
+.menu ul li ul li:hover {
+    background: #7f7f7f;
+    color: #FFFFFF;
+}
+
+.menu ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*#header {
+    width: 100%;
+    min-width: 950px;
+    height: 195px;
+    background-image: url(images/bg.jpg);
+    background-repeat: repeat-x;
+    border: none
+}*/
+
+.logo {
+    padding: 10px;
+    float: left;
+}
+
+.logo img {
+    width: 400px;
+}
+
+.pics {
+    width: 200px;
+    float: inherit;
+    margin-top: -10px;
+}
+
+#topLink input {
+    outline: none;
+    color: #000;
+    background: none;
+    border: 1px solid #014f7d;
+    line-height: 1.5em;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#topLink a {
+    padding: 10px;
+    font-size: 14px;
+    color: #014f7d;
+    text-decoration: none;
+}
+
+#topLink a:hover {
+    color: #333;
+    font-size: 14px;
+    text-decoration: underline;
+}

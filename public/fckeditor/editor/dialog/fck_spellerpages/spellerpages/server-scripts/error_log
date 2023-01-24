@@ -1,0 +1,2 @@
+[28-Aug-2017 20:05:34 UTC] PHP Warning:  shell_exec() has been disabled for security reasons in /home/ctpfsdgo/public_html/fckeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.php on line 102
+[28-Aug-2017 21:57:45 UTC] PHP Warning:  shell_exec() has been disabled for security reasons in /home/ctpfsdgo/public_html/fckeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.php on line 102
