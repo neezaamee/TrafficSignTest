@@ -20,6 +20,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index', ['pageHeading' => 'CTPF.. With You, For You, Always']);
 });
+
+Route::get('/kamran', function () {
+    return view('kamran', ['pageHeading' => 'CTPF.. With You, For You, Always']);
+});
+
 //Sub Routes About Us
 Route::get('/Profile', function(){
     return view('Profile', ['pageHeading' => 'Profile']);

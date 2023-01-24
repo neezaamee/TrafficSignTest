@@ -1,21 +1,19 @@
 @extends('Layout.Base')
 @section('content')
 <style>
-    table,
-    tr,
-    th,
-    td {
+    #ticketTable,#ticketTable tr,#ticketTable th,#ticketTable td {
         border: 1px solid black;
         padding: 5px 15px 5px 15px;
         font-size: 1em;
         font-weight: 700;
     }
 
-    th {
+    #ticketTable th {
         font-size: 1.5em;
+        padding: 5px 15px 5px 15px;
     }
 
-    tbody {
+    #ticketTable tbody {
         background: aliceblue;
     }
 

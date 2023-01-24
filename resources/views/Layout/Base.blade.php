@@ -22,6 +22,7 @@
     @show
     @yield('content')
     
+    <div class="ui horizontal divider"></div>
     @section('footer')
       @include('partials.footer')  
     @show

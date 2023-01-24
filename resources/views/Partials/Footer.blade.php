@@ -29,12 +29,14 @@
 </style>
 <br>
 
-<div class="footer" style="clear: both;">
+<div class="footer">
     <div class="ui four column stackable relaxed padded grid">
-        <div class="column footer-1st-grid">
+        <div class="column">
+        </div>
+        <div class="column">
             <ul>
                 <li>
-                    <a href="{{ url('https://www.facebook.com/ctpfaisalabad') }}">
+                    <a href="{{ url('/') }}">
                         <h2 class="ui header"><img src="{{ asset('images/Facebook-logo.jpg') }}" alt="" class="ui image" style="width: 5.5em"></h2>
                     </a>
                 </li>
@@ -46,42 +48,32 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('https://www.youtube.com/c/citytrafficpolicefaisalabad') }}">
+                    <a href="{{ url('/') }}">
                         <h2 class="ui header"><img src="{{ asset('images/youtube.png') }}" alt="" class="ui image" style="width: 5.5em"></h2>
                     </a>
                 </li>
             </ul>
-
         </div>
-        <div class="column footer-2nd-grid">
-            <ul class="footer-ul">
-                <li><a href="#traffic-news">NEWS &amp; EVENTS </a></li>
-                <li><a href="{{ url('/TrafficViolationFine') }}">TRAFFIC VIOLATION FINE </a></li>
-                <li><a href="{{ url('/Salient') }}">SALIENT FEATURES </a></li>
-                <li><a href="{{ url('/SportsCTPF') }}">CTPF IN SPORTS </a></li>
-                <li><a href="{{ url('/EmergencyNumbers') }}">EMERGENCY NUMBERS </a></li>
-                <li><a href="{{ url('/Oversight') }}">OVERSIGHT </a></li>
-            </ul>
-        </div>
-        <div class="column footer-3rd-grid">
-            <ul class="footer-ul">
-                <li><a href="{{ url('/Rescue15') }}">RESCUE 15 </a></li>
-                <li><a href="{{ url('/FinePaymentProcess') }}">FINE PAYMENT PROCESS </a></li>
-                <li><a href="{{ url('/MartyrsCTPF') }}">SALUTE OUR MARTYRS </a></li>
-                <li><a href="{{ url('/Employement') }}">EMPLOYEMENT </a></li>
-                <li><a href="{{ url('/BooksByPoliceOfficers') }}">BOOKS BY POLICE OFFICERS </a></li>
-                <li><a href="{{ url('/ContactUs') }}">CONTACT US </a></li>
-            </ul>
-        </div>
-        <div class="column footer-last-grid">
+        
+        
+        <div class="column">
             <h3>CONTACT US</h3>
-            <ul>
-                <li>CTO Office, Near Civil Lines Police Station, Opposite Kachehrian.</li>
-                <li>Tel. +92-41-9200514, 9200714</li>
-                <li>Help Line. 1915</li>
-                <li>Fax: +92-419200515</li>
-                <li>Email:<a href="#">fsd.ctp@gmail.com</a></li>
-            </ul>
+            <table style="text-align: left;">
+                <tr>
+                    <th>Address:</th>
+                    <td>Faisalabad, Pakistan</td>
+                </tr>
+                <tr>
+                    <th>Tel:</th>
+                    <td>+92-30-22211000</td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td>nizami@email.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
         </div>
     </div>
 
@@ -167,25 +159,8 @@
     <br>
     <div class="row copyright">
         <center>
-            <h5>Copyright ©
-                <?php echo "20".date('y');?> IT Branch, City Traffic Police Faisalabad.</h5>
+            <h5>Copyright © {{ date('Y') }} <u><a href="{{ url('/') }}">TrafficSigns.Com.Pk</a></u></h5>
         </center>
     </div>
 </div>
 <!--/Footer-->
-
-
-<!--LiveChat Script(powered by mylivechat.com)-->
-<script type="text/javascript">
-    function add_chatinline() {
-        var hccid = 85739534;
-        var nt = document.createElement("script");
-        nt.async = true;
-        nt.src = "https://mylivechat.com/chatinline.aspx?hccid=" + hccid;
-        var ct = document.getElementsByTagName("script")[0];
-        ct.parentNode.insertBefore(nt, ct);
-    }
-    add_chatinline();
-
-</script>
-<!--/LiveChat Script-->

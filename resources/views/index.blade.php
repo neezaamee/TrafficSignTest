@@ -28,31 +28,8 @@
     }
 
 </style>
-
+@parent
 <!--News Pane-->
 <x-newspane />
 <!--/News Pane-->
-
-<!--Slider-->
-<x-homepageSlider />
-<!--/ Slider-->
-
-<div class="ui horizontal divider"></div>
-<!-- Box Section-->
-<x-boxSection />
-<!--/ Box Section-->
-<br>
-<div class="ui horizontal divider"></div>
-
-<!--Important Links-->
-<div class="ui three column stackable relaxed grid">
-    <div class="row">
-        <div class="one wide column" hidden></div>
-        <x-importantlinks />
-        <x-gallery />
-        <div class="one wide column" hidden></div>
-    </div>
-</div>
-<!--/ Important Links-->
-<div class="ui horizontal divider"></div>
 @stop
