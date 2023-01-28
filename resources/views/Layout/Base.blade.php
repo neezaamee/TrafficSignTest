@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    @section('head')
     <meta charset="UTF-8">
     {{-- <title>@yield('title')</title> --}}
     <title>
       @section('title')
-        {{ $pageHeading ?? "CTPF" }}
+        {{ $pageHeading ?? "Traffic Signs" }}
       @show
     </title>
     @include('partials.assets')
+    @show
 </head>
 
 <body>
-    <script type="text/javascript" src=
-"https://translate.google.com/translate_a/element.js?
-        cb=googleTranslateElementInit">
-    </script> 
+  <div class="main">
     @section('header')
-        @include('partials.header')
+      @include('partials.header')
     @show
+    <div class="ui horizontal divider"></div>
+    
     @yield('content')
     
     <div class="ui horizontal divider"></div>
     @section('footer')
-      @include('partials.footer')  
+    @include('partials.footer')  
     @show
+  </div> 
 </body>
 
 </html>

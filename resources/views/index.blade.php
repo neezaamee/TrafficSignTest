@@ -29,7 +29,33 @@
 
 </style>
 @parent
+
 <!--News Pane-->
-<x-newspane />
+<x-newspane>
+    <x-slot name="trafficNews">
+        {{ $trafficNews }}
+    </x-slot>
+</x-newspane>
 <!--/News Pane-->
+
+<div class="ui horizontal divider"></div>
+<div class="ui horizontal divider"></div>
+<div class="ui horizontal divider"></div>
+{{-- Box Section --}}
+<x-boxSection />
+
+<div class="ui form piled segment secondary red trafficsigns">
+    <div class="ui center aligned basic segment">
+        <a href="signTest"><div class="ui big blue button urdu">
+                اردو میں ٹریفک اشاروں کی تیاری
+            </div></a>
+        <div class="ui horizontal divider">
+            Or
+        </div>
+        <a href="signTest"><div class="ui big blue button">
+                Traffic Signs Preparation in English
+            
+            </div></a>
+    </div>
+</div> 
 @stop

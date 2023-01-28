@@ -1,30 +1,30 @@
-<!--Footer Section-->
-<div class="ui horizontal divider"></div>
-<!--Footer Section-->
 <!--Footer-->
 <style>
-    ul.footer-ul {
-        list-style: none;
-        /* Remove HTML bullets */
-        padding: 0;
-        margin: 0;
-    }
+    .copyright{
+        padding-top: 15px;
 
-    ul.footer-ul li {
-        padding-left: 16px;
     }
+    .footer a{
+        color: white;
+    }
+/*jssor slider loading skin spin css*/
 
-    ul.footer-ul li::before {
-        content: "•";
-        /* Insert content that looks like bullets */
-        padding-right: 8px;
-        color: yellow;
-        /* Or a color you prefer */
-    }
+.jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            tion-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
 
-    ul.footer-ul li a {
-        padding: 5px;
-    }
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
 </style>
 <br>
@@ -33,34 +33,49 @@
     <div class="ui four column stackable relaxed padded grid">
         <div class="column">
         </div>
-        <div class="column">
-            <ul>
-                <li>
-                    <a href="{{ url('/') }}">
-                        <h2 class="ui header"><img src="{{ asset('images/Facebook-logo.jpg') }}" alt="" class="ui image" style="width: 5.5em"></h2>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <h2 class="ui header"><img src="{{ asset('images/twitter_logo.png') }}" alt="" class="ui image" style="width: 5.5em"></h2>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{ url('/') }}">
-                        <h2 class="ui header"><img src="{{ asset('images/youtube.png') }}" alt="" class="ui image" style="width: 5.5em"></h2>
-                    </a>
-                </li>
-            </ul>
+        <div class="column"> 
+            <h3>FIND US</h3>            
+            <table class="ui inverted basic compact table">
+                <tr>
+                    <th class="one wide">
+                        <i class="large icons">
+                            <i class="facebook icon"></i>
+                            <i class="inverted corner add icon"></i>
+                        </i>
+                    </th>
+                    <td>
+                        <a href="{{ 'https://fb.com/neezaamee' }}" target="_blank"> fb.com/NeeZaaMee </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="one wide">
+                        <i class="large icons">
+                            <i class="twitter icon"></i>
+                            <i class="inverted corner add icon"></i>
+                        </i>
+                    </th>
+                    <td>
+                        <a href="{{ 'https://twitter.com/neezaamee' }}" target="_blank">twitter.com/NeeZaaMee</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="one wide">
+                        <i class="large icons">
+                            <i class="whatsapp icon"></i>
+                            <i class="inverted corner add icon"></i>
+                        </i>
+                    </th>
+                    <td>
+                        <a href="{{ 'https://wa.me/+923022211000' }}" target="_blank">+92-30-22211000</a>
+                    </td>                    
+                </tr>
+            </table>
         </div>
-        
-        
         <div class="column">
             <h3>CONTACT US</h3>
-            <table style="text-align: left;">
+            <table class="ui inverted basic compact table">
                 <tr>
-                    <th>Address:</th>
+                    <th class="one wide">Address:</th>
                     <td>Faisalabad, Pakistan</td>
                 </tr>
                 <tr>
@@ -69,7 +84,7 @@
                 </tr>
                 <tr>
                     <th>Email:</th>
-                    <td>nizami@email.com</td>
+                    <td><a href="mailto:neezaamee@gmail.com.com">neezaamee@gmail.com</a></td>
                 </tr>
             </table>
         </div>
@@ -114,49 +129,30 @@
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
-
     </script>
-    <style>
-        /*jssor slider loading skin spin css*/
-
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;tion-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes jssorl-009-spin {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-    </style>
-    <div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);"> <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="{{ asset('/img/spin.svg') }}" /> </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
-            @for ($i = 1; $i < 33; $i++)
-                <div> <img data-u="image" src="{{ url('images/footerSlider/'.$i.'.JPG') }}" /> </div>
-            @endfor
-            
+    <div class="ui stackable relaxed padded grid">
+        <div id="jssor_2"
+            style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin"
+                style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;"
+                    src="{{ asset('/img/spin.svg') }}" /> </div>
+            <div data-u="slides"
+                style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
+                @for ($i = 1; $i < 33; $i++)
+                    <div> <img data-u="image" src="{{ url('images/footerSlider/' . $i . '.JPG') }}" /> </div>
+                @endfor
+    
         </div>
+    </div>
     </div>
     <script type="text/javascript">
         jssor_2_slider_init();
-
     </script>
     <!-- #endregion Jssor Slider End -->
-
-
     <!--/Signal Jssor Slider-->
 
-
-    <br>
     <div class="row copyright">
         <center>
             <h5>Copyright © {{ date('Y') }} <u><a href="{{ url('/') }}">TrafficSigns.Com.Pk</a></u></h5>

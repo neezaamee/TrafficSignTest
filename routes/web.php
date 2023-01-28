@@ -18,13 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index', ['pageHeading' => 'CTPF.. With You, For You, Always']);
+    return view('index', ['trafficNews' => 'ABc']);
 });
-
-Route::get('/kamran', function () {
-    return view('kamran', ['pageHeading' => 'CTPF.. With You, For You, Always']);
-});
-
 //Sub Routes About Us
 Route::get('/Profile', function(){
     return view('Profile', ['pageHeading' => 'Profile']);
@@ -68,6 +63,13 @@ Route::get('/FAQS', function(){
 });
 Route::get('/DrivingSchoolsCTPF', function(){
     return view('drivingSchool', ['pageHeading' => 'Driving Schools <br> City Traffic Police Faisalabad']);
+});
+/* Box Routes */
+Route::get('/RoadMarking', function(){
+    return view('roadMarking', ['pageHeading' => 'Road Marking']);
+});
+Route::get('/TrafficSignals', function(){
+    return view('trafficSignals', ['pageHeading' => 'Traffic Signals']);
 });
 
 //Sub Routes Driving License

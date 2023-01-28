@@ -58,7 +58,7 @@
                         <li>After 90 Days and with in 1 Year: 20% of License Fee</li>
                         <li>After 1 Year: 50% of License Fee (For each year).</li>
                         <li>
-                            <span class="note"><b>To check Tickets Fee <a href="ticketCalculator">click here</a>.</b></span>
+                            <span class="note"><b>To check Tickets Fee <a href="DrivingTicketCalculator">click here</a>.</b></span>
                         </li>
 
                     </ul>

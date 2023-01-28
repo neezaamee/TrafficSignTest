@@ -53,7 +53,7 @@
                         <a href="trafficSigns">Traffic Signs</a>
                         <a href="vehicleRegistration">Verify Vehicle Registration</a>
                         <a href="testModules">Sign Test Preparation</a>
-                        <a href="ticketCalculator">Ticket Calculator</a>
+                        <a href="DrivingTicketCalculator">Ticket Calculator</a>
                         <a href="Faq">Frequently Asked Questions</a>
                         <a href="drivingSchool">Driving Schools CTPF</a>
 
@@ -94,7 +94,7 @@
                 
                 <a href="drivingSchool"><span class="blinking" style="color: yellow;">Driving Schools CTPF</span></a>
 
-                <a href="ticketCalculator"><span class="blinking" style="color: yellow;">Ticket Calculator</span></a>
+                <a href="DrivignTicketCalculator"><span class="blinking" style="color: yellow;">Ticket Calculator</span></a>
 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>

@@ -333,7 +333,6 @@
                         </div>
                     </div>
             </div>
-                <!--/ui two column stackable relaxed grid-->
             <!--/mandatorySigns-->
             <div class="cautionarySigns" id="cautionarySigns" style="display: none;">
                 <h4><span style="color: red;"><b>NOTE:</b></span> Click on the road signs to view the situation where they are installed. </h4>
