@@ -40,7 +40,6 @@
 
 <div class="ui horizontal divider"></div>
 <div class="ui horizontal divider"></div>
-<div class="ui horizontal divider"></div>
 {{-- Box Section --}}
 <x-boxSection />
 
