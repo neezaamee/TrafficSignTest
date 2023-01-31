@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('feedbacks', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->string('subject');
             $table->string('name');
             $table->bigInteger('contact')->nullable();
             $table->string('email');

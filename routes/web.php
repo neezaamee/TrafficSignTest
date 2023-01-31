@@ -109,6 +109,5 @@ Route::post('/ComplaintBox', [ComplaintController::class, 'new']);
 Route::get('/ComplaintStatus', function(){
     return view('trackComplaint', ['pageHeading' => 'Track Complaint']);
 });
-Route::post('/ComplaintStatus', [ComplaintController::class, 'status']);
-Route::get('/ComplaintsAll', [ComplaintController::class, 'all']);
-Route::resource('feedbacks', FeedbackController::class);
+Route::resource('Feedback', FeedbackController::class);
+Route::get('/FeedbackForm', [FeedbackController::class, 'create']);

@@ -3,12 +3,13 @@
         <div class="topnav" id="myTopnav">
             <a href="{{ url('/') }}" class="active">Home</a>
                 <div class="dropdown">
-                    <button class="dropbtn">About Us
+                    <button class="dropbtn">Find Us
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
+                        <a href="{{ url('/FeedbackForm') }}">Leave Feedback</a>
+                        <a href="{{ url('/ContactUs')}}">Contact Us</a>
                         <a href="{{ url('/AboutFaisalabad') }}">About Faisalabad</a>
-                        <a href="{{ url('/ContactUs')}}">Feedback</a>
                     </div>
                 </div>
                 <div class="dropdown">

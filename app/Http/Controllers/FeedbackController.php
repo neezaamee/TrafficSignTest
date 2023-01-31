@@ -27,7 +27,7 @@ class FeedbackController extends Controller
     public function create()
     {
         //
-        echo "hello from Feedback create method";
+        return view('feedbackForm', ['pageHeading' => 'Feedback Form']);
     }
 
     /**
@@ -39,6 +39,9 @@ class FeedbackController extends Controller
     public function store(Request $request)
     {
         //
+        $incomingData = $request->all();
+        Feedback::create($incomingData);
+        return view('feedbackForm', ['pageHeading' => 'Feedback', 'Message' => 'Thank You for Your Feedback']);
     }
 
     /**
