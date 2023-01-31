@@ -1,5 +1,5 @@
 <div class="box">
-    <div class="ui internally celled four column stackable relaxed grid">
+    <div class="ui four column stackable relaxed grid">
             <div class="column">                
                 <a href="{{ url('/TrafficSigns') }}">
                     <h2 class="ui red raised segment centered aligned header">
