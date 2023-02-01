@@ -14,7 +14,8 @@ class AboutUsController extends Controller
     }
     function signTestUr(){
         $data = ['pageHeading' => 'Sign Test in Urdu', 'qNum' => '1', 'qImg' => 'trafficsigns.png', 'qTxt' => 'تصویر میں ٹریفک کے نشان کا کیا مطلب ہے؟', 'opt1' => '1', 'opt2' => '1', 'opt3' => '1', 'opt4' => '1', 'btnTxt' => '1'  ];
-        return view('signTest',['data' => $data]);
+        $Answers = ['1','2','3', '4', '6'];
+        return view('signTest',['data' => $data, 'ansz'=> $Answers]);
 
     }
     function signTestEn(){
