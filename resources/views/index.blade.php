@@ -45,16 +45,19 @@
 
 <div class="ui form piled segment secondary red trafficsigns">
     <div class="ui center aligned basic segment">
-        <a href="signTest"><div class="ui big blue button urdu">
+        <a href="signTestUr">
+            <div class="ui big blue button urdu">
                 اردو میں ٹریفک اشاروں کی تیاری
-            </div></a>
+            </div>
+        </a>
         <div class="ui horizontal divider">
             Or
         </div>
-        <a href="signTest"><div class="ui big blue button">
-                Traffic Signs Preparation in English
-            
-            </div></a>
+        <a href="signTestEn">
+            <div class="ui big blue button">
+                Traffic Signs Preparation in English            
+            </div>
+        </a>
     </div>
 </div> 
 @stop
