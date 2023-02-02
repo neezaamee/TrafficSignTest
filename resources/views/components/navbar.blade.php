@@ -1,15 +1,16 @@
+
 <div class="ui fluid container">
     <div class="row">
         <div class="topnav" id="myTopnav">
-            <a href="{{ url('/') }}" class="active">Home</a>
+            <a href="{{ url('/') }}" class="navbarLink">Home</a>
                 <div class="dropdown">
                     <button class="dropbtn">Find Us
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="{{ url('/FeedbackForm') }}">Leave Feedback</a>
-                        <a href="{{ url('/ContactUs')}}">Contact Us</a>
-                        <a href="{{ url('/AboutFaisalabad') }}">About Faisalabad</a>
+                        <a href="{{ url('/FeedbackForm') }}" class="navbarLink">Leave Feedback</a>
+                        <a href="{{ url('/ContactUs')}}" class="navbarLink">Contact Us</a>
+                        <a href="{{ url('/AboutFaisalabad') }}" class="navbarLink">About Faisalabad</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -17,10 +18,10 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="{{ url('/SafetyTips')}}">Safety Tips</a>
-                        <a href="{{ url('/FinePaymentProcess')}}">Fine Payment Process</a>
-                        <a href="{{ url('/TrafficSigns')}}">Traffic Signs</a>
-                        <a href="{{ url('/DrivingTicketsCalculator')}}">Driving Tickets Calculator</a>
+                        <a href="{{ url('/SafetyTips')}}" class="navbarLink">Safety Tips</a>
+                        <a href="{{ url('/FinePaymentProcess')}}" class="navbarLink">Fine Payment Process</a>
+                        <a href="{{ url('/TrafficSigns')}}" class="navbarLink">Traffic Signs</a>
+                        <a href="{{ url('/DrivingTicketsCalculator')}}" class="navbarLink">Driving Tickets Calculator</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -28,21 +29,21 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="{{ url('/VerifyLicense')}}">Verify License</a>
-                        <a href="{{ url('/TrackLicense')}}">Track License</a>
-                        <a href="{{ url('/LearnerPermit')}}">Learner Driving Permit</a>
-                        <a href="{{ url('/RegularLicense')}}">Regular License</a>
-                        <a href="{{ url('/RenewLicense')}}">Renewal License</a>
-                        <a href="{{ url('/DuplicateLicense')}}">Duplicate License</a>
-                        <a href="{{ url('/EndorsementLicense')}}">Endorsement License</a>
-                        <a href="{{ url('/InternationalDrivingPermit')}}">Int. Driving Permit</a>
-                        <a href="{{ url('/InvalidCarriage')}}">Invalid Carriage</a>
+                        <a href="{{ url('/VerifyLicense')}}" class="navbarLink">Verify License</a>
+                        <a href="{{ url('/TrackLicense')}}" class="navbarLink">Track License</a>
+                        <a href="{{ url('/LearnerPermit')}}" class="navbarLink">Learner Driving Permit</a>
+                        <a href="{{ url('/RegularLicense')}}" class="navbarLink">Regular License</a>
+                        <a href="{{ url('/RenewLicense')}}" class="navbarLink">Renewal License</a>
+                        <a href="{{ url('/DuplicateLicense')}}" class="navbarLink">Duplicate License</a>
+                        <a href="{{ url('/EndorsementLicense')}}" class="navbarLink">Endorsement License</a>
+                        <a href="{{ url('/InternationalDrivingPermit')}}" class="navbarLink">Int. Driving Permit</a>
+                        <a href="{{ url('/InvalidCarriage')}}" class="navbarLink">Invalid Carriage</a>
 
                     </div>
                 </div>
-                
-                <a href="{{ url('/Downloads')}}">Downloads</a>
-                <a href="{{ url('/DrivingTicketsCalculator')}}">Ticket Calculator</a>
+
+                <a href="{{ url('/Downloads')}}" class="navbarLink">Downloads</a>
+                <a href="{{ url('/DrivingTicketsCalculator')}}" class="navbarLink">Ticket Calculator</a>
                 {{-- <a href="{{ url('/DrivingTicketsCalculator')}}"><span class="blinking" style="color: yellow;">Ticket Calculator</span></a> --}}
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
@@ -55,6 +56,22 @@
                 } else {
                     x.className = "topnav";
                 }
+            }
+        </script>
+        <script>
+            // Get the container element
+            var btnContainer = document.getElementById("myTopnav");
+
+            // Get all buttons with class="btn" inside the container
+            var btns = btnContainer.getElementsByClassName("navbarLink");
+
+            // Loop through the buttons and add the active class to the current/clicked button
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
             }
         </script>
     </div>

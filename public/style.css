@@ -5,7 +5,7 @@ body {
 
 
 header {
-    border-bottom: 3px solid maroon;
+    /* border-bottom: 3px solid maroon; */
     clear: both;
 }
 
@@ -109,7 +109,6 @@ header {
 
 
 /* Add a grey background to dropdown links on hover */
-
 .dropdown-content a:hover {
     background-color: #2c7ba2;
     color: #fff;
@@ -736,7 +735,7 @@ header {
 }
 
 .contentBox {
-   
+
     min-height: 400px;
 }
 

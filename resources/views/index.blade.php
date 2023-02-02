@@ -45,7 +45,7 @@
 
 <div class="ui form piled segment secondary red trafficsigns">
     <div class="ui center aligned basic segment">
-        <a href="signTestUr">
+        <a href="{{ url('/SignTest/En') }}">
             <div class="ui big blue button urdu">
                 اردو میں ٹریفک اشاروں کی تیاری
             </div>
@@ -53,11 +53,11 @@
         <div class="ui horizontal divider">
             Or
         </div>
-        <a href="signTestEn">
+        <a href="{{ url('/SignTest/Ur') }}">
             <div class="ui big blue button">
-                Traffic Signs Preparation in English            
+                Traffic Signs Preparation in English
             </div>
         </a>
     </div>
-</div> 
+</div>
 @stop

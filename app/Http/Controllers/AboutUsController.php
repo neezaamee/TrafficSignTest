@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\HistoryCto as ModelsCtohistory;
+use App\Models\Question;
+use App\Models\Answer;
 use Illuminate\Http\Request;
 
 class AboutUsController extends Controller
@@ -13,14 +15,28 @@ class AboutUsController extends Controller
         return view('ctoHistory', ['CTOs' => $allCTOs, 'pageHeading' => 'CTOs Faisalabad']);
     }
     function signTestUr(){
-        $data = ['pageHeading' => 'Sign Test in Urdu', 'qNum' => '1', 'qImg' => 'trafficsigns.png', 'qTxt' => 'تصویر میں ٹریفک کے نشان کا کیا مطلب ہے؟', 'opt1' => '1', 'opt2' => '1', 'opt3' => '1', 'opt4' => '1', 'btnTxt' => '1'  ];
-        $Answers = ['1','2','3', '4', '6'];
-        return view('signTest',['data' => $data, 'ansz'=> $Answers]);
+        $Questions = Question::all();
+        $Answers = Answer::all();
+        $data = ['pageHeading' => 'Sign Test in Urdu', 'qHeading' => 'سوال نمبر'];
+        return view('signTest',['data' => $data, 'Questions' => $Questions, 'Answers'=> $Answers]);
 
     }
     function signTestEn(){
-        $data = ['pageHeading' => 'Sign Test in English', 'qNum' => '1', 'qImg' => '1', 'qTxt' => '1', 'opt1' => '1', 'opt2' => '1', 'opt3' => '1', 'opt4' => '1', 'btnTxt' => '1'  ];
-        return view('signTest',['data' => $data]);
+        $Questions = Question::all();
+        $Answers = Answer::all();
+        $data = ['pageHeading' => 'Sign Test in English', 'qHeading' => 'Question No'];
+        return view('signTest',['data' => $data, 'Questions' => $Questions, 'Answers'=> $Answers]);
+
+
+    }
+    function signTest($lang){
+        if($lang=='Ur'){
+            return $this->signTestUr();
+        }elseif($lang=='En'){
+            return $this->signTestEn();
+        }else{
+            return redirect('/');
+        }
 
     }
 }
