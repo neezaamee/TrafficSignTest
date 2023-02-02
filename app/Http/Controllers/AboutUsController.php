@@ -35,7 +35,11 @@ class AboutUsController extends Controller
         }elseif($lang=='En'){
             return $this->signTestEn();
         }else{
-            return redirect('/');
+            $Answers = Question::find(1)->answers;
+            foreach($Answers as $A){
+                echo $A->id;
+            }
+
         }
 
     }

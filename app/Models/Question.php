@@ -9,4 +9,9 @@ class Question extends Model
 {
     use HasFactory;
     protected $fillable = ['qtxt', 'qimg', 'qaudio', 'category'];
+
+    public function answers()
+    {
+        return $this->hasMany(Answer::class);
+    }
 }
