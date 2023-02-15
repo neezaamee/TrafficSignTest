@@ -29,17 +29,21 @@ class AboutUsController extends Controller
 
 
     }
-    function signTest($lang){
-        if($lang=='Ur'){
+    function signTest(Request $request, $lang){
+        /* if($request->is('Sign-Test/ur')){
             return $this->signTestUr();
-        }elseif($lang=='En'){
+        }elseif($request->is('Sign-Test/en')){
             return $this->signTestEn();
         }else{
-            $Answers = Question::find(1)->answers;
-            foreach($Answers as $A){
-                echo $A->id;
-            }
-
+            dd($request->path().' is not a valid path');
+        } */
+        if(ucFirst($lang)=='Ur'){
+            return $this->signTestUr();
+        }elseif(ucFirst($lang)=='En'){
+            return $this->signTestEn();
+        }else{
+            //dd($request->path().' is not a valid path');
+            echo $request->path()." is not a valid path";
         }
 
     }

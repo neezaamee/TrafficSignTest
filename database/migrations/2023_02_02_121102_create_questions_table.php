@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('qimg')->nullable();
             $table->string('qaudio')->nullable();
             $table->tinyInteger('category');
+            $table->enum('lang', ['ur', 'en']);
+            $table->boolean('status');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->nullable()->useCurrentOnUpdate();
         });

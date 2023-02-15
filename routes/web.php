@@ -111,6 +111,6 @@ Route::get('/ComplaintStatus', function(){
 });
 Route::resource('Feedback', FeedbackController::class);
 Route::get('/FeedbackForm', [FeedbackController::class, 'create']);
-Route::get('/signTestUr', [AboutUsController::class, 'signTestUr']);
-Route::get('/signTestEn', [AboutUsController::class, 'signTestEn']);
+//Route::get('/signTestUr', [AboutUsController::class, 'signTestUr']);
+//Route::get('/signTestEn', [AboutUsController::class, 'signTestEn']);
 Route::get('/SignTest/{lang}', [AboutUsController::class, 'signTest']);
